@@ -2,7 +2,7 @@ class Team
     
     attr_accessor :name,:win,:lose,:draw
     
-    def initialize(name='Giants',win=67,lose=45,draw=8)
+    def initialize(name,win,lose,draw)
         self.name = name
         self.win = win
         self.lose = lose
@@ -18,7 +18,7 @@ class Team
     end
 end
 
-team1 = Team.new()
+team1 = Team.new('Giants',67,45,8)
 team2 = Team.new('Tigers',60,53,7)
 team3 = Team.new('Dragons',60,55,5)
 team4 = Team.new('BayStars',56,58,6)
